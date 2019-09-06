@@ -1,0 +1,16 @@
+.partners {
+    margin-bottom: 70px;
+    &-title {
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        color: $advogrand;
+        text-align: center;
+        padding-top: 100px;
+        margin-bottom: 80px;   
+        @include mullerMed;
+    }
+    &-slider {
+        text-align: center;
+    }
+}

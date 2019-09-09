@@ -72,4 +72,14 @@
         }
     }
 }
-    
+@media(max-width: 768px) {
+    .main {
+        &-wrap {
+            padding-top: 60px;
+        }
+        &-btn {
+            
+            margin-bottom: 30px;
+        }
+    }
+}  

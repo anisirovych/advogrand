@@ -14,3 +14,15 @@
         text-align: center;
     }
 }
+@media(max-width: 992px) {
+    .partners {
+        margin-bottom: 30px;
+        &-title {
+            padding-top: 50px;
+            margin-bottom: 30px;
+        }
+        &-slider {
+            margin-bottom: 20px;
+        }
+    }
+}

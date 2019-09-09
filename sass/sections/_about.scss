@@ -57,3 +57,22 @@
         }
     }
 }
+@media(max-width: 768px) {
+    .about {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &-title {
+            margin-bottom: 30px;
+        }
+        &-wrapper {
+            &_description {
+                margin-bottom: 35px;
+            }
+            &_items {
+                .items-solved {
+                    font-size: 34px;
+                }
+            }
+        }
+    }
+}

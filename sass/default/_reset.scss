@@ -34,3 +34,11 @@ body {
     font-family: "Proxima Nova";
 }
 
+.items-active {
+    transition: all .3s;
+    border: 2px solid #e42626;
+    border-radius: 4px;
+    text-align: center;
+    padding: 11px 12px 9px 12px;
+}
+

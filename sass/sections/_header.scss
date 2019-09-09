@@ -42,6 +42,13 @@
             @include proximaExtra;
             margin-top: 10px;
             margin-bottom: 10px;
+            border: 1px solid $red-border;
+            transition: all .4s;
+            &:hover {
+                background-color: #ffffff;
+                color: $red-border;
+                transition: all .4s;
+            }
         }
     }
     &-line {
@@ -96,8 +103,8 @@
                         content: "\eac0";   
                         font-family: icomoon;
                         position: absolute;
-                        left: 25%;
-                        top: 10%;
+                        left: 24%;
+                        top: 8%;
                     }
                 }     
             }
@@ -112,8 +119,8 @@
                         content: "\eabe";
                         font-family: icomoon;
                         position: absolute;
-                        left: 25%;
-                        top: 10%;
+                        left: 24%;
+                        top: 8%;
                     }
                 }
             }
@@ -121,6 +128,73 @@
         .logo {
             margin-top: 20px;
             margin-bottom: 20px;
+        }
+    }
+}
+@media(max-width: 992px) {
+    .header {
+        &-number {
+            font-size: 13px;
+        }
+        &-wrapper {
+            .nav-menu {
+                ul {
+                    li {
+                        margin-right: 10px;
+                        font-size: 13px;
+                    }
+                }
+            }
+            .btn-call_me {
+                padding: 10px 10px;
+                font-size: 11px;
+            }
+        }
+        &-bottom {
+            &_lawyer {
+                font-size: 13px;
+            }
+            &_icons {
+                .lawyer-number {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 767px) {
+    .header {
+        &-wrapper {
+            .nav-menu {
+                display: none;
+            }
+        }
+        &-bottom {
+            display: block;
+            &_lawyer {
+                margin-left: 25px;
+                display: inline-block;
+            }
+            &_icons {
+                .lawyer-number {
+                    font-size: 15px;
+                }
+            }
+            .logo {
+                display: inline-block;
+            }
+        }
+    }
+}
+@media(max-width: 475px) {
+    .header {
+        &-bottom {
+            &_lawyer {
+                margin-left: 0px;
+            }
+            &_icons {
+                margin-bottom: 15px;
+            }
         }
     }
 }

@@ -12,6 +12,20 @@
     }
     &-items {
         margin-top: 80px;
+        ul {
+            font-size: 13px;
+            font-weight: 600;
+            @include proximaLight;
+            li {
+                a {
+                    transition: all .3s;
+                    &:hover{
+                        transition: all .3s;
+                        color: $red-border;
+                    }
+                }
+            }
+        }
         &_list {
             text-align: right;
             padding-top: 55px;
@@ -22,6 +36,9 @@
         &_advogrand {
             text-align: center;
             padding-bottom: 30px;
+            .items-bold {
+                @include proximaExtra;
+            }
             li {
                 padding-top: 30px;
             }
@@ -43,20 +60,81 @@
     &__items {
         box-shadow: 0 10px 10px rgba(38, 184, 58, 0.2);
         background-color: #26b83a;
-        color: #ffffff;
         padding-top: 30px;
+        color: #ffffff;
     }
     &-btn_more {
         border-radius: 5px;
         background-color: $red-border;
         border: 1px solid  $red-border;
-        background-image: linear-gradient(to top, #c11717 0%, #e42626 100%);
         color: #ffffff;
         width: 280px;
         height: 65px;
-        margin-top: 25px;
+        margin-top: 13px;
+        font-weight: 300;
+        @include proximaExtra;
+        transition: all .3s;
+        &:hover {
+            background-color: #ffffff;
+            color: $red-border;
+            transition: all .3s;
+        }
     }
     .col-top {
         margin-top: -5px;
+    }
+}
+@media(max-width: 1199px) {
+    .advantages {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        &-title {
+            font-size: 27px;
+        }
+        &-items {
+            margin-top: 40px;
+            .span_advogrand {
+                display: block;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+            &_list {
+                text-align: center;
+                padding-top: 60px;
+                li {
+                    padding-top: 20px;
+                }
+            }
+            &_advogrand { 
+                li {
+                    padding-top: 20px;
+                }
+            }
+        }
+        &__items {
+            padding-top: 15px;
+        }
+        &-btn_more {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+@media(max-width: 768px) {
+    .advantages {
+        &-title {
+            font-size: 24px;
+        }
+        &-items {
+            margin-top: 40px;
+            .span_advogrand {
+                display: block;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+            &_list {
+                padding-top: 10px;
+            }
+        }
     }
 }
